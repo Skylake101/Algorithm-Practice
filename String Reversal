@@ -1,6 +1,8 @@
 */
-//(Technically, the fastest way is to use the reverse function is: 
+//Technically, the fastest way is to use the reverse function is: 
+
 function reverseString(str) {return str;} reverseString("hello");
+
 But I'll to demonstrate how to do it if the function wasn't available
 /*
 
