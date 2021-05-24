@@ -1,0 +1,13 @@
+let omega = 'racecar' //Swap this string to try new palindomes
+let outputOne = ''
+let ph = omega.length
+while(ph > -1){
+  outputOne += omega.charAt(ph)
+  ph --
+}
+
+if(omega + outputOne == omega + omega){
+  console.log('This is a palindrome')
+} else {
+  console.log('This is not a palindrome')
+}
