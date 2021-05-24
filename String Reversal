@@ -1,0 +1,26 @@
+*/
+//(Technically, the fastest way is to use the reverse function is: 
+function reverseString(str) {return str;} reverseString("hello");
+But I'll to demonstrate how to do it if the function wasn't available
+/*
+
+let alpha = 'qwedrtgy'
+let omega = 'zxcdvbgm'
+let finalAnswer = []
+let alphaCounter = alpha.length - 1;
+let omegaCounter = omega.length; //Moves backwards from end to start
+
+while(alphaCounter > -1){ 
+    while(omegaCounter > -1){ //(This runs for one Omega/all Alpha)
+      if (alpha.charAt(alphaCounter) == omega.charAt(omegaCounter)){
+          //console.log(alpha.charAt(alphaCounter))
+          finalAnswer.push(omega.charAt(omegaCounter))
+          
+        }
+        omegaCounter--
+    }
+alphaCounter --
+omegaCounter = omega.length;
+}    
+
+console.log(finalAnswer)
