@@ -1,0 +1,8 @@
+let stringFow = 'abcde' //Reverse this string
+let stringRev = '' //Blank slate to reverse string onto
+let ph = stringFow.length
+while(ph > -1){
+  stringRev += stringFow.charAt(ph)
+  ph --
+}
+console.log(stringRev)//Outputting String Reverse
