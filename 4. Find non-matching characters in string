@@ -1,0 +1,20 @@
+//This takes two string of equal length, compares the top and bottom, and pushes if there is a difference
+
+let alpha = 'abcqe'
+let omega = 'abcde'
+let finalAnswer = []
+let alphaCounter = alpha.length;
+let omegaCounter = omega.length; //Moves backwards from end to start
+
+while(alphaCounter > -1){ 
+    //while(omegaCounter > -1){ //(This runs for one Omega/all Alpha)
+      if (alpha.charAt(alphaCounter) !== omega.charAt(omegaCounter)){
+          //console.log(alpha.charAt(alphaCounter))
+          finalAnswer.push(omega.charAt(omegaCounter))
+          
+    }
+alphaCounter --
+omegaCounter --
+}    
+
+console.log(finalAnswer)
